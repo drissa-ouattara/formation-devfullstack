@@ -1,0 +1,66 @@
+/*cards.css*/
+.presentation {
+    background-color: rgb(143, 234, 234);
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px;
+}
+
+.competence {
+    background-color: rgb(143, 234, 234);
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px;
+}
+
+.a-propos {
+    background-color: rgb(143, 234, 234);
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px;
+}
+
+.contact {
+    background-color: rgb(143, 234, 234);
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px; 
+}
+
+.internet {
+    background-color: aqua;
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px;    
+}
+
+.html {
+    background-color: orange;
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px;
+}
+
+.css {
+    background-color: darkgray;
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px;
+}
+
+.container {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 6px;
+    padding: 6px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px;
+    box-shadow: 5px 5px 10px black;
+    border: none;
+}

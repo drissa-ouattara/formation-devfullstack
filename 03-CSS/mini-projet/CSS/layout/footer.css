@@ -1,0 +1,9 @@
+/*layout/footer*/
+
+.footer {
+    background-color: rgb(36, 39, 39);
+    padding: 2px;
+    border-radius: 6px;
+    margin: 6px;
+    color: white;
+}

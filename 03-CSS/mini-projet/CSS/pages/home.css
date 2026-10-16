@@ -1,0 +1,33 @@
+/*pages/home.css*/
+
+.presentation,
+.competence,
+.a-propos,
+.contact {
+    background-color: rgb(143, 234, 234);
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px;
+}
+
+.internet, .html, .css {
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px;
+}
+
+
+.internet {
+    background-color: aqua;
+       
+}
+
+.html {
+    background-color: orange;
+   
+}
+
+.css {
+    background-color: darkgray;
+   
+}

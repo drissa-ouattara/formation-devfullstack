@@ -1,0 +1,10 @@
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    list-style-type: none;
+}
+.navigation a {
+    text-decoration: none !important;
+}

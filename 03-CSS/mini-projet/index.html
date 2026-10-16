@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>mini-projet-HTML/CSS</title>
+        <link rel="stylesheet" href="CSS/main.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <a href="index.html">Accueil</a>
+            <nav class="navigation">
+                <ul>
+                    
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#a-propos"> &Agrave; propos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <h1>Mini-Projet-CSS</h1>
+            <section class="presentation">
+                <h2 id="presentation">Présentation</h2>
+                <p>
+                    Le but est de mettre en pratique la plupart des notions de CSS vues jusque-là, notamment :
+                </p>
+
+                <ul>
+                    
+                    <li>[x] Syntaxe CSS </li>
+                    <li>[x] Sélecteurs </li>
+                    <li>[x] Cascade</li>
+                    <li>[x] Spécificité</li>
+                    <li>[x] Héritage</li>
+                    <li>[x] Box Model</li>
+                    <li>[x] Display</li>
+                    <li>[x] Positionnement</li>
+                    <li>[x] Flexbox</li>
+                    <li>[x] Grid</li>
+                    <li>[x] Responsive Design</li>
+                    <li>[x] Media Queries</li>
+                    <li>[x] Transitions</li>
+                    <li>[x] Transformations</li>
+                    <li>[x] Animations</li>
+                    <li>[x] Variables CSS</li>
+                    <li>[x] Architecture CSS</li>
+                
+                </ul>
+
+                <p>
+                    Autour d'un contenu qui détaille un peu ce que j'ai appris jusque-là.
+                </p>
+
+            </section>
+
+            <section class="competence">
+                <h2>Mes compétences</h2>
+                <p>
+                    À ce stade de mon parcours, les notions vues jusque‑là concernent : 
+                </p>
+                <article class="internet">
+                    <h3>INTERNET</h3>
+                    <p>
+                        Internet est un réseau qui interconnecte plusieurs équipements informatiques à travers le globe. Il s'agissait jadis d'un projet qui était la propriété exclusive de l'armée américaine, sous le nom d'« ARPANET ».
+                        Aujourd'hui, il est utilisé aux quatre coins du globe par tous.
+                        Pour le parcours Full Stack, certains éléments d'Internet seront indispensables à connaître. Je vous en présente quelques-uns.
+                    </p>
+                    <div class="container">
+
+                        <article class="card">
+                            <h4 class="text-center">UNE URL</h4>
+                            <p>
+                                Une URL (Uniform Resource Locator) est une adresse permettant de localiser une ressource sur le Web. Elle contient plusieurs informations, à savoir :
+                            </p>
+                            <ul>
+                                <li>Le protocole;</li>
+                                <li>Le nom de domaine;</li>
+                                <li>Le chemin (path);</li>
+                                <li>Les paramètres (Query string)</li>
+                            </ul>
+                        </article>
+                        <article class="card">
+                            <h4 class="text-center">LE DNS</h4>
+                            <p>   
+                                Les ordinateurs communiquent entre eux grâce aux adresses IP et non aux noms de domaine.
+                                Le DNS <span>(Domain Name System)</span> est un service chargé de traduire un nom de domaine (par exemple www.google.com) en adresse IP (IPv4/IPv6) afin que l'ordinateur puisse contacter le bon serveur.
+                            </p>
+                        </article>
+                        <article class="card">
+                            <h4 class="text-center">TCP</h4>
+                            <p>   
+                                TCP <span>(Transmission Control Protocol)</span> est un protocole de transport (couche 4 du modèle OSI).
+                                Son rôle est de garantir une communication fiable entre deux machines.
+                            </p>
+                        </article>
+                        <article class="card">
+                            <h4 class="text-center">TLS</h4>
+                            <p>   
+                                TLS (Transport Layer Security) assure la sécurité des échanges entre le client et le serveur.
+                                Il garantit :
+                            </p>
+                            <ul>
+                                <li>La confidentialité des données en les chiffrant;</li>
+                                <li>L'intégrité des données;</li>
+                                <li>L'authentification du serveur grâce au certificat numérique.</li>
+                            </ul>
+                        </article>
+                        <article class="card">
+                            <h4 class="text-center">HTTP</h4>
+                            <p>   
+                               HTTP (HyperText Transfer Protocol) est le protocole utilisé pour communiquer entre un client et un serveur Web.
+                               Ainsi, il permet au client de demander une ressource et au serveur de lui répondre.
+                            </p>
+                        </article>
+                        <article class="card">
+                            <h4 class="text-center">LES MÉTHODES HTTP</h4>
+                            <p>   
+                               Il s'agit de mots-clés utilisés pour manipuler des données. Les plus courants sont :
+                            </p>
+                            <ul>
+                                <li>POST : envoyer des données vers le serveur ;</li>
+                                <li>GET : Lire une ressource;</li>
+                                <li>PUT : Remplacer complètement une ressource;</li>
+                                <li>PATCH : modifier partiellement une ressource ;</li>
+                                <li>DELETE : supprimer une ressource.</li>
+                            </ul>
+                        </article>
+                        <article class="card">
+                            <h4 class="text-center">CODES HTTP</h4>
+                            <p>   
+                              Les codes HTTP sont très utiles, notamment pour identifier le type de réponse venant du serveur. En voici quelques exemples :
+                            </p>
+                            <table>
+                                <caption>Principaux codes HTTP</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Codes</th>
+                                        <th scope="col">Significations</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">200 : OK</th>
+                                        <td>Requête réussie</td>
+                                    </tr>     
+                                    
+                                    <tr>
+                                        <th scope="row">201 : Created</th>
+                                        <td>Ressource créée </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">204 : No Content</th>
+                                        <td>Succès sans contenu</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">400 : Bad Request</th>
+                                        <td>Requête invalide</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">401 : Unauthorized</th>
+                                        <td>Authentification requise</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">403 : Forbidden</th>
+                                        <td>Permissions refusées</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">404 : Not Found</th>
+                                        <td>Ressource introuvable</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">500 : Internal Server Error</th>
+                                        <td>Erreur interne du serveur</td>
+                                    </tr>
+                                </tbody>
+                              
+                            </table>
+                        </article>
+
+                        <article class="card">
+                            <h4 class="text-center"> API REST</h4>
+                            <p>
+                                Une API (Application Programming Interface) est une interface permettant à deux programmes de communiquer.
+                                Une API REST est une API qui utilise les principes de REST et les méthodes du protocole HTTP (GET, POST, PUT, PATCH, DELETE...) pour manipuler des ressources.
+                            </p>
+                        </article>
+
+                        <article class="card">
+                            <h4 class="text-center" >JSON</h4>
+                            <p>
+                                JSON (JavaScript Object Notation) est un format texte permettant d'échanger des données entre différents programmes.                            
+                                Il est indépendant des langages de programmation et peut être utilisé par JavaScript, Python, PHP, Java, C#, Go et bien d'autres.                            
+                                Les API REST utilisent très souvent JSON pour envoyer et recevoir des données.
+                            </p>
+                        </article>
+
+                        <article class="card">
+                            <h4 class="text-center">JWT</h4>
+                            <p>
+                                JWT (JSON Web Token) est un standard permettant de représenter les informations d'authentification sous la forme d'un jeton (token) : `xxxxx.yyyyy.zzzzz` (Header.Payload.Signature).
+                                Après une authentification réussie, le serveur génère un token signé qu'il renvoie au client.
+                                Le client conserve ce token et le renvoie au serveur à chaque requête, généralement dans l'en-tête HTTP `Authorization`.
+                                Le serveur vérifie alors la validité du token avant d'autoriser l'accès aux ressources demandées.
+                            </p>
+                        </article>
+
+                    </div>
+                </article>
+
+                <article class="html">
+                    <h3>HTML</h3>
+                    <p>
+                        HTML (HyperText Markup Language) est un langage de balisage conçu pour structurer un site web. Il détermine l'ossature d'une page web. Depuis sa création, il n'a cessé d'évoluer sous diverses versions ; aujourd'hui, nous en sommes à sa version 5.
+                    </p>
+
+                    <div class="html container">
+                        <article class="card">
+                            <h4 class="text-center">HTML sémantique</h4>
+                            <p>
+                                Les balises sémantiques permettent de donner du sens et de structurer le contenu d'une page.
+                            </p>
+                            <pre>
+                                <code>
+                                    Exemples :
+                                    &lt;header&gt; : contenu introductif d'une page ou d'une section.
+                                    &lt;nav&gt; : zone contenant des liens de navigation.
+                                    &lt;main&gt; : contenu principal de la page.
+                                    &lt;section&gt; : section thématique du document.
+                                    &lt;footer&gt; : pied de page ou d'une section.
+                                </code>
+                            </pre>
+                        </article>
+
+                        <article class="card">
+                            <h4 class="text-center">Structure minimale d'une page HTML</h4>
+                            <pre>
+                                <code>
+                                    Une page HTML possède une structure minimale :
+                                    &lt;!DOCTYPE html&gt;
+                                    &lt;html lang="fr"&gt;
+                                    &lt;head&gt;
+                                    &lt;meta charset="UTF-8"&gt;
+                                    &lt;title&gt;...&lt;/title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                    ...
+                                    &lt;/body&gt;
+                                    &lt;/html&gt;
+                                </code>
+                            </pre>
+                        </article>
+                    </div>
+                </article>
+
+                <article class="css">
+                    <h3>CSS</h3>
+                    <p>
+                       CSS (Cascading Style Sheets) est un langage de style utilisé pour décrire la présentation des documents HTML et XML.
+                       Il permet aux développeurs de contrôler l'esthétique d'une page web, à savoir : les espacements, la police d'écriture, les couleurs, le responsive design et bien d'autres éléments.<br> Voyons quelques concepts clés.
+                    </p>
+                    <div class="css container">
+                        <article class="card">
+                            <h4 class="text-center">Les sélecteurs</h4>
+                            <p>Ils permettent d'identifier les éléments HTML à styliser.</p>
+                            <pre>
+                                Exemple
+                                p {
+
+                                };
+                                h1{
+
+                                };
+                                h2 {
+
+                                };
+                                *{
+
+                                };
+                                ...etc
+                            </pre>
+                        </article>
+
+                        <article class="card">
+                            <h4 class="text-center">Propriétés et valeurs</h4>
+                            <p>
+                                Elles permettent de définir quels styles appliquer et comment. Exemples
+                            </p>
+                            <pre>
+                                Exemple :
+                                color: red;
+                                background-color: blue;
+                                font-family: Arial;
+                                padding: 5px;
+                                box-sizing: border-box;
+                                ... etc.
+                            </pre>
+                        </article>
+
+                        <article class="card">
+                            <h4 class="text-center">Exemple de code CSS</h4>
+                            <pre>
+                                <code>
+                                    *{
+                                        box-sizing: border-box;
+                                    }
+
+                                    body{
+                                        margin:0;
+                                        padding:0;
+                                        font-family: Arial, sans-serif;
+                                    }
+
+                                    h1 {
+                                        color:blue;
+                                        text-align:center;
+                                    }
+                                </code>
+                            </pre>
+                        </article>
+                    </div>
+                </article>
+
+            </section>
+            
+            <section class="a-propos">
+                <h2 id="a-propos">&Agrave; propos</h2>
+                <p>Au moment o&ugrave; j'écris ce document, le lundi 24 août 2026, je ne suis qu'aux prémices de mon objectif final, qui est de devenir développeur full-stack. Après avoir appris HTML et CSS, la suite sera JavaScript.</p>
+            </section>
+
+            <section class="contact">
+                <h2 id="contact">Me contacter</h2>
+                <img src="images/icone_contact.png" alt="" width="30px" height="30px">
+                
+                <form class="form-contact" action="/contact" method="POST">
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required rows="6" cols="48"></textarea>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+		    <p>&copy; 2026 DevNotes. Tous droits réservés.</p>
+        </footer>
+        
+    </body>
+</html>

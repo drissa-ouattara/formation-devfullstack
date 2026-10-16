@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>DevNotes - Documentation Node.js</title>
+</head>
+<body>
+	<header>
+		<p>DevNotes</p>
+		<nav>
+			<ul>
+				<li><a href="#accueil">Accueil</a></li>
+				<li><a href="#documentation">Documentation</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="accueil">
+        <h1>Mini-Projet HTML : Découvrir Node.js</h1>
+
+		<p>
+            Node.js est une plateforme logicielle libre en JavaScript, orientée vers les applications réseau évènementielles hautement concurrentes qui doivent pouvoir monter en charge.
+            Node.js a été créé par Ryan Dahl en 2009. Son développement et sa maintenance sont effectués par l'entreprise Joyent. Dahl a eu l'idée de créer Node.js après avoir observé la barre de progression d'un chargement de fichier sous Flickr : le navigateur ne savait pas quel pourcentage du fichier était chargé et devait adresser une requête au serveur web.Dahl voulait développer une méthode plus simple.
+            <!--J'espère tu m' approndira tout ca (historiques, pourquoi node.js , dans quel type de projets il devrait etre utilisé... pareil pour toutes les notions qu'on abordera tout au long de la formation) meme si j'ai fais quelques recherche pour comprndre un minimum node.js. J aime bien connaitre mes outils avant de commencer a les utiliser. Ainsi, le choix entre les technologies ne sera pas fastidieux. Tres important pour moi!-->
+		</p>
+	    <img src="https://nodejs.org/static/logos/nodejsLight.svg" alt="Le logo officiel de Node.js" >
+		
+        <section>
+			<h2 id="documentation">Documentation Node.js</h2>
+
+			<article>
+				<h3>Introduction</h3>
+				<p>
+					Node.js est un environnement d’exécution JavaScript côté serveur, basé sur le moteur V8 de Chrome. 
+                    Il permet d’exécuter du JavaScript en dehors du navigateur, ce qui le rend particulièrement adapté pour le développement de serveurs web, d’API et d’applications temps réel.
+				</p>
+			</article>
+
+			<article>
+				<h3>Installation</h3>
+				<p>
+                   Node.js est un environnement d'exécution pour JavaScript côté serveur. L'installation varie selon le système d'exploitation. 
+                   Voici l' étapes d'installation pour systèmes windows : <a href="#stepFornodeInstallation"> Cliquez ici</a>.
+                </p>
+			</article>
+
+			<article>
+				<h3>Concepts fondamentaux</h3>
+				<p>
+                    Voici les concepts fondamentaux à comprendre pour bien débuter :
+                </p>
+                    <ul>
+                        <li>L’asynchronicité et la boucle d’événements,</li>
+                        <li>L’utilisation de modules et npm,</li>
+                        <li>La création de serveurs HTTP,</li>
+                        <li>La gestion d’événements avec EventEmitter.</li>
+                    </ul>
+            </article>
+
+            <article>
+                <h3>Les modules</h3>
+				<p>
+                    En Node.js, les modules permettent d’organiser le code en différents blocs réutilisables et d’accéder à des fonctionnalités spécifiques. 
+                    Il existe plusieurs types de modules : intégrés, externes et locaux.
+                </p>
+
+                    <ol>
+                        <li>
+                            Modules intégrés
+                            <ul>
+                                <li> fs : opérations sur les fichiers </li>
+                                <li>http : création de serveurs HTTP </li>
+                                <li>path : manipulation de chemins de fichiers </li>
+                                <li>os : informations sur le système d’exploitation </li>
+                            </ul>
+                        </li>
+                   
+                        <li>
+                            Modules externes
+                            <ul>
+                                <li> express : framework pour créer des serveurs web, </li>
+                                <li>mongoose : manipuler MongoDB, </li>
+                                <li>axios : effectuer des requêtes HTTP, </li>
+                                <li>etc...</li>
+                            </ul>
+                        </li>
+                   
+                        <li>
+                            Modules locaux
+                            <p>
+                                Vous pouvez créer vos propres modules pour structurer votre projet.
+                            </p>
+                        </li>
+                    </ol>
+            </article>
+
+			<article>
+                <h3>Exemple de code</h3> <!--J'ai trouvé des exemples sur le net, sinon je n'y comprends rien puisqu'on n a pas encore vu tout ca-->
+				<p>
+                    Voici un exemple d'implémentation du programme Hello World sous forme de serveur web :
+                </p>
+                <pre>
+                    <code>
+                        const { createServer } = require('http');
+                        
+                        //Creation du serveur
+                        const server = createServer((request, response) => {
+                            response.writeHead(200, {'Content-Type': 'text/plain'});
+                            response.end('Hello World\n');
+                        });
+                        
+                        server.listen(3000, () => console.log('Adresse du serveur : http://localhost:3000'));
+                    
+                    </code>
+                </pre>
+
+                <p>
+                    Vous pouvez créer vos propres modules pour structurer votre projet :
+                </p>
+                <pre>
+                    <code>
+                        // fichier mathUtils.js
+                        function addition(a, b) {
+                        return a + b;
+                        }
+                        module.exports = { addition };
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+                        // fichier main.js
+                        const mathUtils = require('./mathUtils');
+                        console.log(mathUtils.addition(2, 3)); // 5
+                    </code>
+
+                </pre>
+			</article>
+		</section>
+
+		<section>
+			<h2>Ressources</h2>
+			<ul>
+				<li>
+                    <a href="https://nodejs.org/docs/latest/api/" target="_blank" >Documentation officielle Node.js</a>
+                </li>
+				<li>
+                    <a href="https://developer.mozilla.org/fr/docs/Learn/Server-side/Express_Nodejs/Introduction" target="_blank" >Introduction à Node.js sur MDN</a>
+                </li>
+				<li>Guide interne DevNotes pour pratiquer les modules</li>
+			</ul>
+
+			<h3 id="stepFornodeInstallation">Étapes d'installation</h3>
+			<ol>
+				<li>Télécharger la version LTS depuis le site officiel.</li>
+				<li>Installer Node.js en suivant l'assistant.</li>
+				<li>Vérifier l'installation avec les commandes <code>node --version</code> et <code>npm --version</code>.</li>
+				<li>Créer un dossier et initialiser le projet avec <code>npm init</code>.</li>
+			</ol>
+		</section>
+
+		<section >
+			<h2>Repères Node.js</h2>
+			<table>
+				<caption>Principaux éléments à connaître dans Node.js</caption>
+				<thead>
+					<tr>
+						<th scope="col">Élément</th>
+						<th scope="col">Description</th>
+						<th scope="col">Niveau</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Variables</th>
+						<td>Stockent des valeurs avec <code>let</code> ou <code>const</code>.</td>
+						<td>Débutant</td>
+					</tr>
+					<tr>
+						<th scope="row">Fonctions</th>
+						<td>Regroupent des instructions réutilisables.</td>
+						<td>Intermédiaire</td>
+					</tr>
+					<tr>
+						<th scope="row">Modules</th>
+						<td>Organisent le code et facilitent son partage.</td>
+						<td>Avancé</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section >
+			<h2 >Node.js en vidéo</h2>
+			<iframe src="https://www.youtube.com/embed/TlB_eWDSMt4" title="Présentation de Node.js">
+			</iframe>
+		</section>
+
+		<section>
+			<h2 id="contact">Nous contacter</h2>
+			<form action="https://example.com/contact" method="post">
+				<p>
+					<label for="nom">Nom :</label>
+					<input type="text" id="nom" name="nom" autocomplete="name" required>
+				</p>
+				<p>
+					<label for="email">Email :</label>
+					<input type="email" id="email" name="email" autocomplete="email" required>
+				</p>
+				<p>
+					<label for="sujet">Sujet :</label>
+					<input type="text" id="sujet" name="sujet" required>
+				</p>
+				<p>
+					<label for="message">Message :</label>
+					<textarea id="message" name="message" rows="6" cols="40" required></textarea>
+				</p>
+				<button type="submit">Envoyer</button>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 DevNotes. Tous droits réservés.</p>
+		<p><a href="#contact">Contacter DevNotes</a> · <a href="https://nodejs.org/docs/latest/api/" target="_blank" >Documentation officielle</a></p>
+	</footer>
+</body>
+</html>

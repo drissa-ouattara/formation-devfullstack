@@ -1,0 +1,14 @@
+<h1 id="titre">Mon titre</h1>
+
+<p id="message">Ancien message</p>
+
+<button id="modifier">Modifier</button>
+
+<script>
+    let p = document.querySelector("#message");
+    let button = document.querySelector("#modifier");
+
+    button.addEventListener("click", () => {
+        p.textContent = "Le message a été modifié";
+    });
+</script>

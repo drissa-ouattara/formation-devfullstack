@@ -1,0 +1,20 @@
+/*cards.css*/
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px;
+    box-shadow: 5px 5px 10px black;
+    border: none;
+    min-width: 0;
+}
+
+.card pre{
+    overflow-x: auto;
+    scrollbar-color: #888888 rgba(255,255,255,0.2);
+}
+
+.card ul {
+    margin-left: 26px;
+}
