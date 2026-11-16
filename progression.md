@@ -1,4 +1,4 @@
-# Progression — Formation Dev Full Stack
+# Progression.md — Formation Dev Full Stack
 
 > Parcours inspiré de roadmap.sh.
 > Le dépôt Git constitue la mémoire externe et la source de vérité de la formation.
@@ -194,9 +194,9 @@
 - [x] Exercices guidés sur les Promises et async/await
 - [x] Exercices guidés sur Fetch, l'Event Loop et les timers
 - [x] Checkpoint global JavaScript
-- [ ] Exercices JavaScript en autonomie
-- [ ] Manipulation du DOM en autonomie
-- [ ] Mini-projets JavaScript
+- [X] Exercices JavaScript en autonomie
+- [X] Manipulation du DOM en autonomie
+- [X] Mini-projets JavaScript
 ---
 
 # 05 — Git & GitHub
@@ -215,6 +215,50 @@
 * [ ] Rebase
 * [ ] Pull Request
 * [ ] Workflow Git professionnel
+
+---
+
+# 06 — Frontend applicatif - React
+
+**Statut : 🟡 En cours**
+
+### Architecture par composants
+
+- [x] Introduction à React
+- [x] JSX
+- [x] Création et organisation des composants
+- [x] Importation et exportation des composants
+- [x] Props et transmission de données
+- [x] State avec useState
+- [x] Mise à jour du state
+- [x] Gestion des événements (`onClick`)
+- [x] Rendu conditionnel
+- [x] Rendu de listes avec map()
+- [x] Filtrage de données avec filter()
+- [x] Utilisation des clés (`key`)
+- [x] Composition de composants
+
+### État et gestion des données
+
+- [x] État local avec useState — introduction
+- [ ] Context API
+- [ ] useReducer
+- [ ] Stores externes
+- [ ] Persistance de l'état
+- [ ] Flux de données entre composants
+- [ ] Communication avec une API
+- [ ] Gestion des chargements et des erreurs
+
+### Pratique
+
+- [x] Créer des composants React
+- [x] Transmettre des données avec les props
+- [x] Créer un compteur avec useState
+- [x] Gérer plusieurs états dans un composant
+- [x] Réaliser un rendu conditionnel
+- [x] Afficher et filtrer des listes
+- [x] Exercices sur la composition de composants
+- [ ] Mini-projet React
 
 ### Pratique
 
@@ -327,11 +371,10 @@ Les fondamentaux JavaScript ont été étudiés et évalués à travers des expl
 
 ### Travail restant
 
-* Exercices JavaScript en autonomie ;
-* Exercices pratiques de manipulation du DOM ;
-* Mini-projets JavaScript.
+- Approfondissement de la pratique JavaScript au fil des projets.
 
-**Checkpoint global validé. La pratique autonome reste à poursuivre.**
+**Checkpoint global validé. Les fondamentaux et les exercices pratiques prévus ont été réalisés.**
+
 
 
 ---

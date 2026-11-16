@@ -1,4 +1,4 @@
-# Full-Stack Development Roadmap
+# Full-Stack Development Roadmap.md
 
 > Une progression pratique, des fondamentaux jusqu'au déploiement d'une application complète.
 
@@ -133,11 +133,11 @@
 
 ### Architecture par composants
 
-- [ ] Creation de composants
-- [ ] Passage des props
-- [ ] Gestion de l'etat
-- [ ] Cycle de vie
-- [ ] Rendu conditionnel
+- [x] Creation de composants
+- [x] Passage des props
+- [x] Gestion de l'etat
+- [x] Cycle de vie
+- [x] Rendu conditionnel
 - [ ] Rendu de listes
 - [ ] Composition de composants
 
